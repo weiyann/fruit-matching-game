@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "guava",
+    "src": "/image/guava.png"
+  },
+  {
+    "id": 2,
+    "name": "guava",
+    "src": "/image/guava.png"
+  },
+  {
+    "id": 3,
+    "name": "apple",
+    "src": "/image/apple.png"
+  },
+  {
+    "id": 4,
+    "name": "apple",
+    "src": "/image/apple.png"
+  },
+  {
+    "id": 5,
+    "name": "strawberry",
+    "src": "/image/strawberry.png"
+  },
+  {
+    "id": 6,
+    "name": "strawberry",
+    "src": "/image/strawberry.png"
+  },
+  {
+    "id": 7,
+    "name": "lemon",
+    "src": "/image/lemon.png"
+  },
+  {
+    "id": 8,
+    "name": "lemon",
+    "src": "/image/lemon.png"
+  }
+]
