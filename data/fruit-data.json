@@ -2,41 +2,50 @@
   {
     "id": 1,
     "name": "guava",
-    "src": "/image/guava.png"
+    "src": "/image/guava.png",
+    "side": "back"
   },
   {
     "id": 2,
     "name": "guava",
-    "src": "/image/guava.png"
+    "src": "/image/guava.png",
+
+    "side": "back"
   },
   {
     "id": 3,
     "name": "apple",
-    "src": "/image/apple.png"
+    "src": "/image/apple.png",
+    "side": "back"
   },
   {
     "id": 4,
     "name": "apple",
-    "src": "/image/apple.png"
+    "src": "/image/apple.png",
+    "side": "back"
   },
   {
     "id": 5,
     "name": "strawberry",
-    "src": "/image/strawberry.png"
+    "src": "/image/strawberry.png",
+    "side": "back"
   },
   {
     "id": 6,
     "name": "strawberry",
-    "src": "/image/strawberry.png"
+    "src": "/image/strawberry.png",
+    "side": "back"
   },
   {
     "id": 7,
     "name": "lemon",
-    "src": "/image/lemon.png"
+    "src": "/image/lemon.png",
+    "side": "back"
   },
   {
     "id": 8,
     "name": "lemon",
-    "src": "/image/lemon.png"
+    "src": "/image/lemon.png",
+    "side": "back"
   }
 ]

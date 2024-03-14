@@ -1,13 +1,16 @@
-<script setup></script>
+<script setup>
+const { fruit } = defineProps(['fruit'])
+console.log(fruit)
+</script>
 
 <template>
   <div class="card-container">
-    <div class="card">
-      <div class="front">
-        <img src="/image/guava.png" alt="guava" class="fruit-card" />
+    <div class="card" @click="$emit('rotateFruit', fruit)">
+      <div :class="{ front: true, 'front-rotate': fruit.side === 'front' }">
+        <img :src="fruit.src" :alt="fruit.name" class="fruit-card" />
       </div>
 
-      <div class="back"></div>
+      <div :class="{ back: true, 'back-rotate': fruit.side === 'front' }"></div>
     </div>
   </div>
 </template>
@@ -19,6 +22,7 @@
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
+  cursor: pointer;
 }
 .front,
 .back {
@@ -30,9 +34,11 @@
   justify-content: center;
   backface-visibility: hidden;
   transition: all 0.5s;
+  border-radius: 10px;
 }
 .front {
   background-color: rgb(19, 0, 144);
+  transform: rotateY(180deg);
 }
 .fruit-card {
   height: 265px;
@@ -40,12 +46,18 @@
 }
 .back {
   background-color: pink;
-  transform: rotateY(180deg);
 }
-.card:hover .front {
-  transform: rotateY(180deg);
-}
-.card:hover .back {
+.front-rotate {
   transform: rotateY(0deg);
 }
+.back-rotate {
+  transform: rotateY(180deg);
+}
+
+/* .card:hover .front {
+  transform: rotateY(0deg);
+}
+.card:hover .back {
+  transform: rotateY(180deg);
+} */
 </style>
