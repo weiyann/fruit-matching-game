@@ -1,6 +1,5 @@
 <script setup>
 const { fruit } = defineProps(['fruit'])
-console.log(fruit)
 </script>
 
 <template>
@@ -37,7 +36,7 @@ console.log(fruit)
   border-radius: 10px;
 }
 .front {
-  background-color: rgb(19, 0, 144);
+  background-color: #1800b7;
   transform: rotateY(180deg);
 }
 .fruit-card {
@@ -45,7 +44,8 @@ console.log(fruit)
   width: 200px;
 }
 .back {
-  background-color: pink;
+  background-color: #1800b7;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png');
 }
 .front-rotate {
   transform: rotateY(0deg);
