@@ -25,8 +25,8 @@ const { fruit } = defineProps(['fruit'])
 }
 .front,
 .back {
-  height: 285px;
-  width: 220px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -40,8 +40,8 @@ const { fruit } = defineProps(['fruit'])
   transform: rotateY(180deg);
 }
 .fruit-card {
-  height: 265px;
-  width: 200px;
+  height: 90%;
+  width: 90%;
 }
 .back {
   background-color: #1800b7;
@@ -54,10 +54,17 @@ const { fruit } = defineProps(['fruit'])
   transform: rotateY(180deg);
 }
 
-/* .card:hover .front {
-  transform: rotateY(0deg);
+@media screen and (max-width: 1200px) {
+  .card {
+    height: 200px;
+    width: 150px;
+  }
 }
-.card:hover .back {
-  transform: rotateY(180deg);
-} */
+
+@media screen and (max-width: 760px) {
+  .card {
+    height: 150px;
+    width: 100px;
+  }
+}
 </style>

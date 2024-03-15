@@ -3,10 +3,13 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
+  display: grid;
+  padding: 0 2rem;
   font-weight: normal;
 }
 body {
+  display: flex;
+  place-items: center;
   background-image: radial-gradient(circle, #f37c00, #f99100, #fca700, #ffbc00, #ffd100);
 }
 h1 {
@@ -44,5 +47,13 @@ a,
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
   }
 }

@@ -74,6 +74,12 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
